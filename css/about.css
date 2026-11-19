@@ -1,0 +1,57 @@
+/* About page only: about.html. D05 owns TWO areas separated by D06. */
+
+/* =================== DESKTOP =================== */
+
+/* ===== START D05 — ABOUT INTRO | OWNED SELECTORS: .about-intro and children ===== */
+/* Add only D05 — ABOUT INTRO rules for .about-intro and children here. */
+/* ===== END D05 — ABOUT INTRO ===== */
+
+/* ===== START D06 — DIRECTORS | OWNED SELECTORS: .about-directors, .director-card and children ===== */
+/* Add only D06 — DIRECTORS rules for .about-directors, .director-card and children here. */
+/* ===== END D06 — DIRECTORS ===== */
+
+/* ===== START D05 — ABOUT CLIENTS | OWNED SELECTORS: .about-clients and children ===== */
+/* Add only D05 — ABOUT CLIENTS rules for .about-clients and children here. */
+/* ===== END D05 — ABOUT CLIENTS ===== */
+
+
+/* =================== TABLET | 1023px and below =================== */
+
+/* ===== START T05 — ABOUT INTRO | OWNED SELECTORS: .about-intro and children ===== */
+@media (max-width: 1023px) {
+  /* Add only T05 — ABOUT INTRO rules for .about-intro and children here. */
+}
+/* ===== END T05 — ABOUT INTRO ===== */
+
+/* ===== START T06 — DIRECTORS | OWNED SELECTORS: .about-directors, .director-card and children ===== */
+@media (max-width: 1023px) {
+  /* Add only T06 — DIRECTORS rules for .about-directors, .director-card and children here. */
+}
+/* ===== END T06 — DIRECTORS ===== */
+
+/* ===== START T05 — ABOUT CLIENTS | OWNED SELECTORS: .about-clients and children ===== */
+@media (max-width: 1023px) {
+  /* Add only T05 — ABOUT CLIENTS rules for .about-clients and children here. */
+}
+/* ===== END T05 — ABOUT CLIENTS ===== */
+
+
+/* =================== MOBILE | 767px and below =================== */
+
+/* ===== START M05 — ABOUT INTRO | OWNED SELECTORS: .about-intro and children ===== */
+@media (max-width: 767px) {
+  /* Add only M05 — ABOUT INTRO rules for .about-intro and children here. */
+}
+/* ===== END M05 — ABOUT INTRO ===== */
+
+/* ===== START M06 — DIRECTORS | OWNED SELECTORS: .about-directors, .director-card and children ===== */
+@media (max-width: 767px) {
+  /* Add only M06 — DIRECTORS rules for .about-directors, .director-card and children here. */
+}
+/* ===== END M06 — DIRECTORS ===== */
+
+/* ===== START M05 — ABOUT CLIENTS | OWNED SELECTORS: .about-clients and children ===== */
+@media (max-width: 767px) {
+  /* Add only M05 — ABOUT CLIENTS rules for .about-clients and children here. */
+}
+/* ===== END M05 — ABOUT CLIENTS ===== */

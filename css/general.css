@@ -1,0 +1,24 @@
+/* Shared tokens, typography, layout utilities. Desktop-first project. */
+:root {
+  --color-midnight-green: #014e56;
+  --color-light-coral: #f67e7e;
+  --color-white: #ffffff;
+  --color-rapture-blue: #79c8c7;
+  --color-police-blue: #2c6269;
+  --color-deep-jungle-green: #004047;
+  --color-sacramento-green: #012f34;
+  --color-dark-green: #002529;
+  --font-main: "Livvic", Arial, sans-serif;
+  --container-max: 1110px;
+  --page-gutter: 24px;
+}
+html { scroll-behavior: smooth; }
+body { min-width: 320px; font-family: var(--font-main); font-weight: 600; line-height: 1.5; color: var(--color-white); background: var(--color-midnight-green); }
+.container { width: min(calc(100% - 2 * var(--page-gutter)), var(--container-max)); margin-inline: auto; }
+a { text-decoration: none; }
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 3px solid var(--color-rapture-blue); outline-offset: 3px; }
+/* Livvic loaded via Google Fonts <link> in each HTML page. */
+/* Breakpoints to coordinate with Figma: tablet and mobile styles are intentionally not implemented. */
+
+/* Antraščių storis pagal Figma Design System; dydžiai nustatomi konkrečiose sekcijose. */
+h1, h2, h3 { font-weight: 700; }

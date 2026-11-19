@@ -1,0 +1,63 @@
+/* Shared components on all pages. Do NOT edit normalize.css or general.css for a section. */
+/* GLOBAL NAVIGATION <header.site-header> / <nav.site-nav>: D01, T01, M01. */
+/* GLOBAL CTA <aside.site-cta>: D09, T09, M09 (Home and About only). */
+/* GLOBAL FOOTER <footer.site-footer>: D09, T09, M09 (all pages). */
+/* Tablet and Mobile rules are deliberately placed after Desktop rules. */
+
+/* =================== DESKTOP =================== */
+
+/* ===== START D01 — NAVIGATION | OWNED SELECTORS: .site-header, .site-nav, .site-nav__logo, .site-nav__panel, .site-nav__links, .site-nav__contact, .site-nav__toggle, .site-nav__close ===== */
+/* Initial scaffold behavior: menu controls are hidden on Desktop. M01 shows them on Mobile. */
+.site-nav__toggle, .site-nav__close { display: none; }
+/* D01: add remaining desktop navigation styles here. */
+/* ===== END D01 — NAVIGATION ===== */
+
+/* ===== START D09 — CTA | OWNED SELECTORS: .site-cta and children ===== */
+/* Add only D09 — CTA rules for .site-cta and children here. */
+/* ===== END D09 — CTA ===== */
+
+/* ===== START D09 — FOOTER | OWNED SELECTORS: .site-footer and children ===== */
+/* Add only D09 — FOOTER rules for .site-footer and children here. */
+/* ===== END D09 — FOOTER ===== */
+
+
+/* =================== TABLET | 1023px and below =================== */
+
+/* ===== START T01 — NAVIGATION | OWNED SELECTORS: .site-header, .site-nav and children ===== */
+@media (max-width: 1023px) {
+  /* Add only T01 — NAVIGATION rules for .site-header, .site-nav and children here. */
+}
+/* ===== END T01 — NAVIGATION ===== */
+
+/* ===== START T09 — CTA | OWNED SELECTORS: .site-cta and children ===== */
+@media (max-width: 1023px) {
+  /* Add only T09 — CTA rules for .site-cta and children here. */
+}
+/* ===== END T09 — CTA ===== */
+
+/* ===== START T09 — FOOTER | OWNED SELECTORS: .site-footer and children ===== */
+@media (max-width: 1023px) {
+  /* Add only T09 — FOOTER rules for .site-footer and children here. */
+}
+/* ===== END T09 — FOOTER ===== */
+
+
+/* =================== MOBILE | 767px and below =================== */
+
+/* ===== START M01 — NAVIGATION | OWNED SELECTORS: .site-header, .site-nav and children ===== */
+@media (max-width: 767px) {
+  /* Add only M01 — NAVIGATION rules for .site-header, .site-nav and children here. */
+}
+/* ===== END M01 — NAVIGATION ===== */
+
+/* ===== START M09 — CTA | OWNED SELECTORS: .site-cta and children ===== */
+@media (max-width: 767px) {
+  /* Add only M09 — CTA rules for .site-cta and children here. */
+}
+/* ===== END M09 — CTA ===== */
+
+/* ===== START M09 — FOOTER | OWNED SELECTORS: .site-footer and children ===== */
+@media (max-width: 767px) {
+  /* Add only M09 — FOOTER rules for .site-footer and children here. */
+}
+/* ===== END M09 — FOOTER ===== */

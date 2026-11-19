@@ -1,0 +1,42 @@
+/* Contact page only: contact.html. D07 owns shared column layout, D08 owns form styles. */
+/* IMPORTANT: never style .contact-form from a D07 block; never style .contact-content__layout from a D08 block. */
+
+/* =================== DESKTOP =================== */
+
+/* ===== START D07 — CONTACT LAYOUT + INTRO | OWNED SELECTORS: .contact-content, .contact-content__layout, .contact-content__intro and children EXCLUDING .contact-form ===== */
+/* Add only D07 — CONTACT LAYOUT + INTRO rules for .contact-content, .contact-content__layout, .contact-content__intro and children EXCLUDING .contact-form here. */
+/* ===== END D07 — CONTACT LAYOUT + INTRO ===== */
+
+/* ===== START D08 — CONTACT FORM | OWNED SELECTORS: .contact-form and children ONLY ===== */
+/* Add only D08 — CONTACT FORM rules for .contact-form and children ONLY here. */
+/* ===== END D08 — CONTACT FORM ===== */
+
+
+/* =================== TABLET | 1023px and below =================== */
+
+/* ===== START T07 — CONTACT LAYOUT + INTRO | OWNED SELECTORS: .contact-content, .contact-content__layout, .contact-content__intro and children EXCLUDING .contact-form ===== */
+@media (max-width: 1023px) {
+  /* Add only T07 — CONTACT LAYOUT + INTRO rules for .contact-content, .contact-content__layout, .contact-content__intro and children EXCLUDING .contact-form here. */
+}
+/* ===== END T07 — CONTACT LAYOUT + INTRO ===== */
+
+/* ===== START T08 — CONTACT FORM | OWNED SELECTORS: .contact-form and children ONLY ===== */
+@media (max-width: 1023px) {
+  /* Add only T08 — CONTACT FORM rules for .contact-form and children ONLY here. */
+}
+/* ===== END T08 — CONTACT FORM ===== */
+
+
+/* =================== MOBILE | 767px and below =================== */
+
+/* ===== START M07 — CONTACT LAYOUT + INTRO | OWNED SELECTORS: .contact-content, .contact-content__layout, .contact-content__intro and children EXCLUDING .contact-form ===== */
+@media (max-width: 767px) {
+  /* Add only M07 — CONTACT LAYOUT + INTRO rules for .contact-content, .contact-content__layout, .contact-content__intro and children EXCLUDING .contact-form here. */
+}
+/* ===== END M07 — CONTACT LAYOUT + INTRO ===== */
+
+/* ===== START M08 — CONTACT FORM | OWNED SELECTORS: .contact-form and children ONLY ===== */
+@media (max-width: 767px) {
+  /* Add only M08 — CONTACT FORM rules for .contact-form and children ONLY here. */
+}
+/* ===== END M08 — CONTACT FORM ===== */

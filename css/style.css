@@ -1,0 +1,57 @@
+/* Home page only: index.html. Do not style Navigation, CTA or Footer here. */
+
+/* =================== DESKTOP =================== */
+
+/* ===== START D02 — HOME HERO | OWNED SELECTORS: .home-hero and children ===== */
+/* Add only D02 — HOME HERO rules for .home-hero and children here. */
+/* ===== END D02 — HOME HERO ===== */
+
+/* ===== START D03 — HOME BENEFITS | OWNED SELECTORS: .home-features and children ===== */
+/* Add only D03 — HOME BENEFITS rules for .home-features and children here. */
+/* ===== END D03 — HOME BENEFITS ===== */
+
+/* ===== START D04 — HOME TESTIMONIALS | OWNED SELECTORS: .home-testimonials and children ===== */
+/* Add only D04 — HOME TESTIMONIALS rules for .home-testimonials and children here. */
+/* ===== END D04 — HOME TESTIMONIALS ===== */
+
+
+/* =================== TABLET | 1023px and below =================== */
+
+/* ===== START T02 — HOME HERO | OWNED SELECTORS: .home-hero and children ===== */
+@media (max-width: 1023px) {
+  /* Add only T02 — HOME HERO rules for .home-hero and children here. */
+}
+/* ===== END T02 — HOME HERO ===== */
+
+/* ===== START T03 — HOME BENEFITS | OWNED SELECTORS: .home-features and children ===== */
+@media (max-width: 1023px) {
+  /* Add only T03 — HOME BENEFITS rules for .home-features and children here. */
+}
+/* ===== END T03 — HOME BENEFITS ===== */
+
+/* ===== START T04 — HOME TESTIMONIALS | OWNED SELECTORS: .home-testimonials and children ===== */
+@media (max-width: 1023px) {
+  /* Add only T04 — HOME TESTIMONIALS rules for .home-testimonials and children here. */
+}
+/* ===== END T04 — HOME TESTIMONIALS ===== */
+
+
+/* =================== MOBILE | 767px and below =================== */
+
+/* ===== START M02 — HOME HERO | OWNED SELECTORS: .home-hero and children ===== */
+@media (max-width: 767px) {
+  /* Add only M02 — HOME HERO rules for .home-hero and children here. */
+}
+/* ===== END M02 — HOME HERO ===== */
+
+/* ===== START M03 — HOME BENEFITS | OWNED SELECTORS: .home-features and children ===== */
+@media (max-width: 767px) {
+  /* Add only M03 — HOME BENEFITS rules for .home-features and children here. */
+}
+/* ===== END M03 — HOME BENEFITS ===== */
+
+/* ===== START M04 — HOME TESTIMONIALS | OWNED SELECTORS: .home-testimonials and children ===== */
+@media (max-width: 767px) {
+  /* Add only M04 — HOME TESTIMONIALS rules for .home-testimonials and children here. */
+}
+/* ===== END M04 — HOME TESTIMONIALS ===== */
