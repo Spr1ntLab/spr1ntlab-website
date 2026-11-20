@@ -16,6 +16,8 @@
   display: flex;
   align-items: center;
   gap: 5rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .site-nav__logo {
@@ -54,10 +56,27 @@
   width: 9.5625rem;
   height: 3rem;
   flex-shrink: 0;
+  border-radius: 1.5rem;
+  border: 2px solid var(--color-white);
 }
 
-.site-nav__toggle, .site-nav__close { display: none; }
+.site-nav__toggle,
+.site-nav__close {
+  display: none;
+}
 /* D01: add remaining desktop navigation styles here. */
+.site-nav__contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 9.5625rem;
+  height: 3rem;
+  flex-shrink: 0;
+  border-radius: 1.5rem;
+  border: 2px solid var(--color-white);
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
 /* ===== END D01 — NAVIGATION ===== */
 
 /* ===== START D09 — CTA | OWNED SELECTORS: .site-cta and children ===== */
@@ -67,7 +86,6 @@
 /* ===== START D09 — FOOTER | OWNED SELECTORS: .site-footer and children ===== */
 /* Add only D09 — FOOTER rules for .site-footer and children here. */
 /* ===== END D09 — FOOTER ===== */
-
 
 /* =================== TABLET | 1023px and below =================== */
 
@@ -88,7 +106,6 @@
   /* Add only T09 — FOOTER rules for .site-footer and children here. */
 }
 /* ===== END T09 — FOOTER ===== */
-
 
 /* =================== MOBILE | 767px and below =================== */
 
