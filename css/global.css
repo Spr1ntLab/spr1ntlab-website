@@ -48,6 +48,9 @@
   margin: 0;
   padding: 0;
 }
+.site-nav__links a {
+  display: block;
+}
 
 .site-nav__contact {
   display: flex;
