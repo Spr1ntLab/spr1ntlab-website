@@ -8,6 +8,7 @@
 
 /* ===== START D01 — NAVIGATION | OWNED SELECTORS: .site-header, .site-nav, .site-nav__logo, .site-nav__panel, .site-nav__links, .site-nav__contact, .site-nav__toggle, .site-nav__close ===== */
 /* Initial scaffold behavior: menu controls are hidden on Desktop. M01 shows them on Mobile. */
+
 .site-header {
   padding-top: 4.56rem;
 }
@@ -48,30 +49,15 @@
   margin: 0;
   padding: 0;
 }
+
 .site-nav__links a {
   display: block;
 }
 
-.site-nav__contact {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 9.5625rem;
-  height: 3rem;
-  flex-shrink: 0;
-  border-radius: 1.5rem;
-  border: 2px solid var(--color-white);
-}
-.site-nav__contact:hover {
-  background-color: var(--color-white);
-  color: var(--color-dark-green);
+.site-nav__links a:hover {
+  color: var(--color-light-coral);
 }
 
-.site-nav__toggle,
-.site-nav__close {
-  display: none;
-}
-/* D01: add remaining desktop navigation styles here. */
 .site-nav__contact {
   display: flex;
   align-items: center;
@@ -84,6 +70,19 @@
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
+
+.site-nav__contact:hover {
+  background-color: var(--color-white);
+  color: var(--color-dark-green);
+}
+
+.site-nav__toggle,
+.site-nav__close {
+  display: none;
+}
+
+/* D01: add remaining desktop navigation styles here. */
+
 /* ===== END D01 — NAVIGATION ===== */
 
 /* ===== START D09 — CTA | OWNED SELECTORS: .site-cta and children ===== */
