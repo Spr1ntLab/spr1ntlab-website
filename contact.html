@@ -1,115 +1,129 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="myteam — building outstanding teams">
-  <title>Contact | myteam</title>
-  <!-- Fonts loaded on every page; do not add another @import. -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@600;700&display=swap" rel="stylesheet">
-  <!-- CSS order is important: reset, shared base, shared components, page-specific. -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/general.css">
-  <link rel="stylesheet" href="css/global.css">
-  <link rel="stylesheet" href="css/contact.css">
-  <!-- JS is intentionally empty: behavior is implemented in the assigned Jira task. -->
-  <script src="js/main.js" defer></script>
-  <script src="js/navigation.js" defer></script>
-  <script src="js/contact.js" defer></script>
-</head>
-<body>
-  <!-- START D01 / T01 / M01: GLOBAL NAVIGATION; edit this entire <header class="site-header"> only for Navigation tasks. -->
-  <header class="site-header">
-    <div class="container">
-      <nav class="site-nav" aria-label="Main navigation">
-        <a class="site-nav__logo" href="index.html" aria-label="myteam – Home">myteam</a>
-        <!-- M01: hamburger button; implement mobile appearance and JS in the Mobile Navigation task. -->
-        <button class="site-nav__toggle" type="button" aria-label="Open menu" aria-controls="site-nav-panel" aria-expanded="false">
-          <span aria-hidden="true">☰</span>
-        </button>
-        <!-- One set of links is reused for desktop, tablet and mobile. Do not duplicate the <nav>. -->
-        <div class="site-nav__panel" id="site-nav-panel">
-          <button class="site-nav__close" type="button" aria-label="Close menu"><span aria-hidden="true">×</span></button>
-          <ul class="site-nav__links">
-            <li><a href="index.html">home</a></li>
-            <li><a href="about.html">about</a></li>
-          </ul>
-          <a class="site-nav__contact" href="contact.html" aria-current="page">contact us</a>
-        </div>
-      </nav>
-    </div>
-  </header>
-  <!-- END D01 / T01 / M01: GLOBAL NAVIGATION -->
-  <main id="main-content">
-    <!-- START D07 / T07 / M07: CONTACT PAGE LAYOUT AND INTRO; outer container belongs to D07. -->
-    <section class="contact-content" aria-labelledby="contact-title">
-      <!-- D07 owns layout (.contact-content__layout), D08 owns form (.contact-form) inside it. -->
-      <div class="container contact-content__layout">
-        <!-- START D07 / T07 / M07: CONTACT INTRO; only <div class="contact-content__intro">. -->
-        <div class="contact-content__intro">
-          <h1 class="contact-content__title" id="contact-title">Contact</h1>
-          <h2 class="contact-content__subtitle">Ask us about</h2>
-          <ul class="contact-content__topics">
-            <li class="contact-content__topic">The quality of our talent network</li>
-            <li class="contact-content__topic">Usage &amp; implementation of our software</li>
-            <li class="contact-content__topic">How we help drive innovation</li>
-          </ul>
-          <!-- D07: add Figma icons/decorations for this column. -->
-        </div>
-        <!-- END D07 / T07 / M07: CONTACT INTRO -->
-
-        <!-- START D08 / T08 / M08: CONTACT FORM; ONLY <form class="contact-form">. -->
-        <form class="contact-form" action="#" method="post">
-          <!-- Backend is NOT provided; do not claim actual form submission works. -->
-          <div class="contact-form__field">
-            <label for="contact-name">Name</label>
-            <input id="contact-name" name="name" type="text" autocomplete="name" required>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="myteam — building outstanding teams" />
+    <title>Contact | myteam</title>
+    <!-- Fonts loaded on every page; do not add another @import. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@600;700&display=swap" rel="stylesheet" />
+    <!-- CSS order is important: reset, shared base, shared components, page-specific. -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <!-- JS is intentionally empty: behavior is implemented in the assigned Jira task. -->
+    <script src="js/main.js" defer></script>
+    <script src="js/navigation.js" defer></script>
+    <script src="js/contact.js" defer></script>
+  </head>
+  <body>
+    <!-- START D01 / T01 / M01: GLOBAL NAVIGATION; edit this entire <header class="site-header"> only for Navigation tasks. -->
+    <header class="site-header">
+      <div class="container">
+        <nav class="site-nav" aria-label="Main navigation">
+          <a class="site-nav__logo" href="index.html" aria-label="myteam – Home">
+            <img src="img/icons/nav-logo.svg" alt="myteam" />
+          </a>
+          <!-- M01: hamburger button; implement mobile appearance and JS in the Mobile Navigation task. -->
+          <button
+            class="site-nav__toggle"
+            type="button"
+            aria-label="Open menu"
+            aria-controls="site-nav-panel"
+            aria-expanded="false"
+          >
+            <span aria-hidden="true">☰</span>
+          </button>
+          <!-- One set of links is reused for desktop, tablet and mobile. Do not duplicate the <nav>. -->
+          <div class="site-nav__panel" id="site-nav-panel">
+            <button class="site-nav__close" type="button" aria-label="Close menu">
+              <span aria-hidden="true">×</span>
+            </button>
+            <ul class="site-nav__links">
+              <li><a href="index.html">home</a></li>
+              <li><a href="about.html">about</a></li>
+            </ul>
+            <a class="site-nav__contact" href="contact.html" aria-current="page">contact us</a>
           </div>
-          <div class="contact-form__field">
-            <label for="contact-email">Email Address</label>
-            <input id="contact-email" name="email" type="email" autocomplete="email" required>
-          </div>
-          <div class="contact-form__field">
-            <label for="contact-company">Company Name</label>
-            <input id="contact-company" name="company" type="text" autocomplete="organization">
-          </div>
-          <div class="contact-form__field">
-            <label for="contact-title-field">Title</label>
-            <input id="contact-title-field" name="title" type="text" autocomplete="organization-title">
-          </div>
-          <div class="contact-form__field">
-            <label for="contact-message">Message</label>
-            <textarea id="contact-message" name="message" rows="4" required></textarea>
-          </div>
-          <button class="contact-form__submit" type="submit">submit</button>
-          <!-- D08: implement any local UI error feedback only within this form. -->
-        </form>
-        <!-- END D08 / T08 / M08: CONTACT FORM -->
-      </div>
-    </section>
-    <!-- END D07 / T07 / M07: CONTACT PAGE LAYOUT. FORM IS OWNED BY D08/T08/M08. -->
-  </main>
-  <!-- START D09 / T09 / M09: GLOBAL FOOTER; identical ownership on all three pages. -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="site-footer__brand">
-        <a class="site-footer__logo" href="index.html" aria-label="myteam – Home">myteam</a>
-        <nav aria-label="Footer navigation">
-          <ul class="site-footer__links">
-            <li><a href="index.html">home</a></li>
-            <li><a href="about.html">about</a></li>
-          </ul>
         </nav>
       </div>
-      <address class="site-footer__address">987 Hillcrest Lane<br>Irvine, CA<br>California 92714<br><a href="tel:+19498337432">Call Us: 949-833-7432</a></address>
-      <div class="site-footer__social">
-        <!-- D09: insert Figma social SVG links with accessible labels. -->
+    </header>
+    <!-- END D01 / T01 / M01: GLOBAL NAVIGATION -->
+    <main id="main-content">
+      <!-- START D07 / T07 / M07: CONTACT PAGE LAYOUT AND INTRO; outer container belongs to D07. -->
+      <section class="contact-content" aria-labelledby="contact-title">
+        <!-- D07 owns layout (.contact-content__layout), D08 owns form (.contact-form) inside it. -->
+        <div class="container contact-content__layout">
+          <!-- START D07 / T07 / M07: CONTACT INTRO; only <div class="contact-content__intro">. -->
+          <div class="contact-content__intro">
+            <h1 class="contact-content__title" id="contact-title">Contact</h1>
+            <h2 class="contact-content__subtitle">Ask us about</h2>
+            <ul class="contact-content__topics">
+              <li class="contact-content__topic">The quality of our talent network</li>
+              <li class="contact-content__topic">Usage &amp; implementation of our software</li>
+              <li class="contact-content__topic">How we help drive innovation</li>
+            </ul>
+            <!-- D07: add Figma icons/decorations for this column. -->
+          </div>
+          <!-- END D07 / T07 / M07: CONTACT INTRO -->
+
+          <!-- START D08 / T08 / M08: CONTACT FORM; ONLY <form class="contact-form">. -->
+          <form class="contact-form" action="#" method="post">
+            <!-- Backend is NOT provided; do not claim actual form submission works. -->
+            <div class="contact-form__field">
+              <label for="contact-name">Name</label>
+              <input id="contact-name" name="name" type="text" autocomplete="name" required />
+            </div>
+            <div class="contact-form__field">
+              <label for="contact-email">Email Address</label>
+              <input id="contact-email" name="email" type="email" autocomplete="email" required />
+            </div>
+            <div class="contact-form__field">
+              <label for="contact-company">Company Name</label>
+              <input id="contact-company" name="company" type="text" autocomplete="organization" />
+            </div>
+            <div class="contact-form__field">
+              <label for="contact-title-field">Title</label>
+              <input id="contact-title-field" name="title" type="text" autocomplete="organization-title" />
+            </div>
+            <div class="contact-form__field">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" name="message" rows="4" required></textarea>
+            </div>
+            <button class="contact-form__submit" type="submit">submit</button>
+            <!-- D08: implement any local UI error feedback only within this form. -->
+          </form>
+          <!-- END D08 / T08 / M08: CONTACT FORM -->
+        </div>
+      </section>
+      <!-- END D07 / T07 / M07: CONTACT PAGE LAYOUT. FORM IS OWNED BY D08/T08/M08. -->
+    </main>
+    <!-- START D09 / T09 / M09: GLOBAL FOOTER; identical ownership on all three pages. -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="site-footer__brand">
+          <a class="site-footer__logo" href="index.html" aria-label="myteam – Home">myteam</a>
+          <nav aria-label="Footer navigation">
+            <ul class="site-footer__links">
+              <li><a href="index.html">home</a></li>
+              <li><a href="about.html">about</a></li>
+            </ul>
+          </nav>
+        </div>
+        <address class="site-footer__address">
+          987 Hillcrest Lane<br />Irvine, CA<br />California 92714<br /><a href="tel:+19498337432"
+            >Call Us: 949-833-7432</a
+          >
+        </address>
+        <div class="site-footer__social">
+          <!-- D09: insert Figma social SVG links with accessible labels. -->
+        </div>
+        <small class="site-footer__copy">Copyright 2020. All Rights Reserved</small>
       </div>
-      <small class="site-footer__copy">Copyright 2020. All Rights Reserved</small>
-    </div>
-  </footer>
-  <!-- END D09 / T09 / M09: GLOBAL FOOTER -->
-</body>
+    </footer>
+    <!-- END D09 / T09 / M09: GLOBAL FOOTER -->
+  </body>
 </html>
