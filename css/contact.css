@@ -5,6 +5,57 @@
 
 /* ===== START D07 — CONTACT LAYOUT + INTRO | OWNED SELECTORS: .contact-content, .contact-content__layout, .contact-content__intro and children EXCLUDING .contact-form ===== */
 /* Add only D07 — CONTACT LAYOUT + INTRO rules for .contact-content, .contact-content__layout, .contact-content__intro and children EXCLUDING .contact-form here. */
+.contact-content {
+  background-color: var(--color-midnight-green);
+  padding-bottom: 100px;
+ position: relative;
+  overflow: hidden;
+}
+.contact-content__layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.contact-content__subtitle {
+  color: var(--color-light-coral);
+}
+.contact-content__title {
+  font-size: 64px;
+  line-height: 1;
+  margin-bottom: 24px;
+}
+.contact-content__topics {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.contact-content__topic {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.contact-content__topic img {
+  width: 72px;
+  height: 72px;
+  flex-shrink: 0;
+}
+.contact-content__decoration {
+  position: absolute;
+  top: 10px;
+  left: -25px;
+  width: 100px;
+  height: auto;
+  pointer-events: none;
+}
+.contact-content__decoration-right {
+  position: absolute;
+  right: -15px;
+  bottom: 0;
+  width: auto;
+  height: 200px;
+  pointer-events: none;
+}
 /* ===== END D07 — CONTACT LAYOUT + INTRO ===== */
 
 /* ===== START D08 — CONTACT FORM | OWNED SELECTORS: .contact-form and children ONLY ===== */
