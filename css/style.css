@@ -4,6 +4,60 @@
 
 /* ===== START D02 — HOME HERO | OWNED SELECTORS: .home-hero and children ===== */
 /* Add only D02 — HOME HERO rules for .home-hero and children here. */
+.home-hero {
+  min-height: 36.19rem;
+  background-image:
+    url("../img/decorative/bg-home-hero-left.svg"),
+    url("../img/decorative/bg-home-hero-bottom.svg");
+  background-repeat: no-repeat;
+  background-position:
+    left 0px top 129px,
+    right 165px bottom;
+}
+
+.home-hero .container {
+  display: grid;
+  grid-template-columns: 39.6875rem 27.8125rem;
+  column-gap: 1.875rem;
+  align-items: start;
+  padding-top: 8.0625rem;
+}
+
+.home-hero__title,
+.home-hero__content {
+  min-width: 0;
+}
+
+.home-hero__title {
+  font-size: 6.25rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.home-hero__title span {
+  color: var(--color-light-coral);
+}
+
+.home-hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.home-hero__line {
+  display: block;
+  width: 3.125rem;
+  height: 0.25rem;
+  background-color: var(--color-rapture-blue);
+}
+
+.home-hero__text {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.75rem;
+  margin-top: 4.9375rem;
+}
+
 /* ===== END D02 — HOME HERO ===== */
 
 /* ===== START D03 — HOME BENEFITS | OWNED SELECTORS: .home-features and children ===== */
