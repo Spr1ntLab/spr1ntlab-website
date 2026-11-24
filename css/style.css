@@ -31,6 +31,30 @@
   padding: 0;
 }
 
+.home-features__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.4375rem;
+}
+
+.home-features__icon {
+  width: 4.5rem;
+  height: 4.5rem;
+  flex-shrink: 0;
+}
+
+.home-features__content h3 {
+  margin: 0;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.home-features__content p {
+  margin: 0;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+}
+
 /* Add only D03 — HOME BENEFITS rules for .home-features and children here. */
 /* ===== END D03 — HOME BENEFITS ===== */
 
