@@ -9,6 +9,22 @@
 /* ===== START D03 — HOME BENEFITS | OWNED SELECTORS: .home-features and children ===== */
 .home-features {
   padding-block: 8.75rem;
+  background-color: var(--color-sacramento-green);
+  position: relative;
+  overflow: hidden;
+}
+
+.home-features::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -6.25rem;
+  width: 12.5rem;
+  height: 15.25rem;
+  background-image: url("../img/decorative/bg-pattern-home-benefits.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
 }
 
 .home-features > .container {
@@ -20,6 +36,19 @@
 
 .home-features__title {
   margin-top: 3.625rem;
+  font-size: 3rem;
+  line-height: 3rem;
+  position: relative;
+}
+
+.home-features__title::before {
+  content: "";
+  position: absolute;
+  top: -3.625rem;
+  left: 0;
+  width: 3.125rem;
+  height: 0.25rem;
+  background-color: var(--color-light-coral);
 }
 
 .home-features__list {
@@ -47,12 +76,14 @@
   margin: 0;
   font-size: 1.125rem;
   line-height: 1.75rem;
+  color: var(--color-light-coral);
 }
 
 .home-features__content p {
   margin: 0;
   font-size: 0.9375rem;
   line-height: 1.5625rem;
+  opacity: 0.8;
 }
 
 /* Add only D03 — HOME BENEFITS rules for .home-features and children here. */
@@ -61,7 +92,6 @@
 /* ===== START D04 — HOME TESTIMONIALS | OWNED SELECTORS: .home-testimonials and children ===== */
 /* Add only D04 — HOME TESTIMONIALS rules for .home-testimonials and children here. */
 /* ===== END D04 — HOME TESTIMONIALS ===== */
-
 
 /* =================== TABLET | 1023px and below =================== */
 
@@ -82,7 +112,6 @@
   /* Add only T04 — HOME TESTIMONIALS rules for .home-testimonials and children here. */
 }
 /* ===== END T04 — HOME TESTIMONIALS ===== */
-
 
 /* =================== MOBILE | 767px and below =================== */
 
