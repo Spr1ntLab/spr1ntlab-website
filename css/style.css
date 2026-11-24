@@ -7,13 +7,98 @@
 /* ===== END D02 — HOME HERO ===== */
 
 /* ===== START D03 — HOME BENEFITS | OWNED SELECTORS: .home-features and children ===== */
+.home-features {
+  padding-block: 8.75rem;
+  background-color: var(--color-sacramento-green);
+  position: relative;
+  overflow: hidden;
+}
+
+.home-features::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -6.25rem;
+  width: 12.5rem;
+  height: 15.25rem;
+  background-image: url("../img/decorative/bg-pattern-home-benefits.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
+}
+
+.home-features > .container {
+  display: grid;
+  grid-template-columns: minmax(0, 27.8125rem) minmax(0, 33.75rem);
+  column-gap: 7.8125rem;
+  align-items: start;
+}
+
+.home-features__title {
+  margin-top: 3.625rem;
+  font-size: 3rem;
+  line-height: 3rem;
+  position: relative;
+}
+
+.home-features__title::before {
+  content: "";
+  position: absolute;
+  top: -3.625rem;
+  left: 0;
+  width: 3.125rem;
+  height: 0.25rem;
+  background-color: var(--color-light-coral);
+}
+
+.home-features__list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 3.625rem;
+  list-style: none;
+  padding: 0;
+}
+
+.home-features__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.4375rem;
+}
+
+.home-features__icon {
+  width: 4.5rem;
+  height: 4.5rem;
+  flex-shrink: 0;
+}
+
+.home-features__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 0;
+}
+
+.home-features__content h3 {
+  margin: 0;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: var(--color-light-coral);
+}
+
+.home-features__content p {
+  margin: 0;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  opacity: 0.8;
+}
+
 /* Add only D03 — HOME BENEFITS rules for .home-features and children here. */
 /* ===== END D03 — HOME BENEFITS ===== */
 
 /* ===== START D04 — HOME TESTIMONIALS | OWNED SELECTORS: .home-testimonials and children ===== */
 /* Add only D04 — HOME TESTIMONIALS rules for .home-testimonials and children here. */
 /* ===== END D04 — HOME TESTIMONIALS ===== */
-
 
 /* =================== TABLET | 1023px and below =================== */
 
@@ -34,7 +119,6 @@
   /* Add only T04 — HOME TESTIMONIALS rules for .home-testimonials and children here. */
 }
 /* ===== END T04 — HOME TESTIMONIALS ===== */
-
 
 /* =================== MOBILE | 767px and below =================== */
 
