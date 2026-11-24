@@ -7,6 +7,30 @@
 /* ===== END D02 — HOME HERO ===== */
 
 /* ===== START D03 — HOME BENEFITS | OWNED SELECTORS: .home-features and children ===== */
+.home-features {
+  padding-block: 8.75rem;
+}
+
+.home-features > .container {
+  display: grid;
+  grid-template-columns: minmax(0, 27.8125rem) minmax(0, 33.75rem);
+  column-gap: 7.8125rem;
+  align-items: start;
+}
+
+.home-features__title {
+  margin-top: 3.625rem;
+}
+
+.home-features__list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 3.625rem;
+  list-style: none;
+  padding: 0;
+}
+
 /* Add only D03 — HOME BENEFITS rules for .home-features and children here. */
 /* ===== END D03 — HOME BENEFITS ===== */
 
