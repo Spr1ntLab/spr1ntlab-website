@@ -11,6 +11,34 @@
 /* ===== END D03 — HOME BENEFITS ===== */
 
 /* ===== START D04 — HOME TESTIMONIALS | OWNED SELECTORS: .home-testimonials and children ===== */
+@media (min-width: 1440px) {
+  .home-testimonials__title {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 59px;
+  }
+  .home-testimonials__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: center;
+    gap: 33px;
+    text-align: center;
+  }
+  .home-testimonials__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  figcaption {
+    display: grid;
+  }
+  span{
+    font-style: italic;
+  }
+  }
+
+
 /* Add only D04 — HOME TESTIMONIALS rules for .home-testimonials and children here. */
 /* ===== END D04 — HOME TESTIMONIALS ===== */
 
