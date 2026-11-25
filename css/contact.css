@@ -60,6 +60,55 @@
 
 /* ===== START D08 — CONTACT FORM | OWNED SELECTORS: .contact-form and children ONLY ===== */
 /* Add only D08 — CONTACT FORM rules for .contact-form and children ONLY here. */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+.contact-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-form__field input,
+.contact-form__field textarea {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--color-rapture-blue);
+  color: var(--color-white);
+  padding: 8px 0;
+  font: inherit;
+  border-radius: 0;
+}
+.contact-form__submit {
+  align-self: flex-start;
+  width: 123px;
+  height: 48px;
+  background-color: var(--color-white);
+  color: var(--color-dark-green);
+  border: none;
+  border-radius: 24px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+.contact-form__field input:focus,
+.contact-form__field textarea:focus {
+  outline: none;
+  border-bottom: 2px solid var(--color-rapture-blue);
+}
+
+.contact-form__field input:invalid:not(:placeholder-shown),
+.contact-form__field textarea:invalid:not(:placeholder-shown) {
+  border-bottom: 2px solid var(--color-light-coral);
+}
+
+.contact-form__submit:hover {
+   background-color: var(--color-white);
+}
 /* ===== END D08 — CONTACT FORM ===== */
 
 
