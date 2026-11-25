@@ -70,13 +70,67 @@
 .about-directors__grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  column-gap: 30px;
+  row-gap: 76px;
 }
 
 .about-directors__item {
   width: 350px;
   height: 253px;
   background: #012F34;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.director-card {
+  margin: 32px 0;
+}
+
+.director-card__front {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.director-card__picture {
+  width: 96px;
+  height: 96px;
+  border-radius: 48px;
+}
+
+.director-card__name {
+  color: #79C8C7;
+  text-align: center;
+  font-family: Livvic;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; /* 155.556% */
+}
+
+.director-card__role {
+  color: #FFF;
+  text-align: center;
+  font-family: Livvic;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 25px; /* 166.667% */
+}
+
+.director-card__toggle {
+  position: absolute;
+  bottom: -28px;
+  width: 56px;
+  height: 56px;
+  border-radius: 28px;
+  background-color: #F67E7E;
+  color: #012F34;
+  font-size: 25px;
+  border: none;
 }
 /* ===== END D06 — DIRECTORS ===== */
 
