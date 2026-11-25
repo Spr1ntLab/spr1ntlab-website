@@ -45,7 +45,39 @@
 
 /* ===== START D06 — DIRECTORS | OWNED SELECTORS: .about-directors, .director-card and children ===== */
 /* Add only D06 — DIRECTORS rules for .about-directors, .director-card and children here. */
+.about-directors {
+  display: flex;
+  justify-content: center;
+  background: #004047;
+}
+.about-directors-container {
+  display: flex;
+  flex-direction: column;
+  width: 1110px;
+  margin: 140px 0;
+}
 
+.about-directors__title {
+  text-align: center;
+  font-family: Livvic;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  margin: 0 0 64px 0;
+}
+
+.about-directors__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.about-directors__item {
+  width: 350px;
+  height: 253px;
+  background: #012F34;
+}
 /* ===== END D06 — DIRECTORS ===== */
 
 /* ===== START D05 — ABOUT CLIENTS | OWNED SELECTORS: .about-clients and children ===== */
