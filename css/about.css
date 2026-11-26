@@ -48,36 +48,37 @@
 .about-directors {
   display: flex;
   justify-content: center;
-  background: #004047;
+  background-color: var(--color-deep-jungle-green);
 }
+
 .about-directors-container {
   display: flex;
   flex-direction: column;
-  width: 1110px;
-  margin: 140px 0;
+  width: min(
+    calc(100% - 2 * var(--page-gutter)),
+    var(--container-max)
+  );
+  margin: 8.75rem 0 10.5rem;
 }
 
 .about-directors__title {
   text-align: center;
-  font-family: Livvic;
-  font-size: 48px;
-  font-style: normal;
+  font-size: 3rem;
   font-weight: 700;
-  line-height: 48px;
-  margin: 0 0 64px 0;
+  line-height: 3rem;
+  margin-bottom: 4rem;
 }
 
 .about-directors__grid {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 30px;
-  row-gap: 76px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 1.875rem;
+  row-gap: 4.75rem;
 }
 
 .about-directors__item {
-  width: 350px;
-  height: 253px;
-  background: #012F34;
+  height: 15.8125rem;
+  background-color: var(--color-sacramento-green);
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -86,7 +87,9 @@
 }
 
 .director-card {
-  margin: 32px 0;
+  margin: 2rem 0;
+  width: 100%;
+  padding-inline: 1.5rem;
 }
 
 .director-card__front {
@@ -96,42 +99,61 @@
 }
 
 .director-card__picture {
-  width: 96px;
-  height: 96px;
-  border-radius: 48px;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  object-fit: cover;
+  outline: 0.125rem solid #c4fffe;
+   margin-bottom: 1rem;
 }
 
 .director-card__name {
-  color: #79C8C7;
+  color: var(--color-rapture-blue);
   text-align: center;
-  font-family: Livvic;
-  font-size: 18px;
-  font-style: normal;
+  font-size: 1.125rem;
   font-weight: 700;
-  line-height: 28px; /* 155.556% */
+  line-height: 1.75rem;
 }
 
 .director-card__role {
-  color: #FFF;
+  color: var(--color-white);
   text-align: center;
-  font-family: Livvic;
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-style: italic;
   font-weight: 500;
-  line-height: 25px; /* 166.667% */
+  line-height: 1.5625rem;
 }
 
 .director-card__toggle {
   position: absolute;
-  bottom: -28px;
-  width: 56px;
-  height: 56px;
-  border-radius: 28px;
-  background-color: #F67E7E;
-  color: #012F34;
-  font-size: 25px;
+  bottom: -1.75rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background-color: var(--color-light-coral);
+  color: var(--color-sacramento-green);
   border: none;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
 }
+
+.director-card__toggle::before,
+.director-card__toggle::after {
+  content: "";
+  position: absolute;
+  background-color: currentColor;
+}
+
+.director-card__toggle::before {
+  width: 1rem;
+  height: 0.25rem;
+}
+
+.director-card__toggle::after {
+  width: 0.25rem;
+  height: 1rem;
+} 
 /* ===== END D06 — DIRECTORS ===== */
 
 /* ===== START D05 — ABOUT CLIENTS | OWNED SELECTORS: .about-clients and children ===== */
