@@ -1,0 +1,23 @@
+name: HTML check
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  html-check:
+    name: HTML check
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Get project files
+        uses: actions/checkout@v7
+
+      - name: Check that index.html exists
+        run: test -f index.html
+
+      - name: Check that HTML tag exists
+        run: grep -qi "<html" index.html
