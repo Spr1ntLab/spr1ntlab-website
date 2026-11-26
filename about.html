@@ -8,7 +8,10 @@
     <!-- Fonts loaded on every page; do not add another @import. -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@600;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,600;0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
     <!-- CSS order is important: reset, shared base, shared components, page-specific. -->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/general.css" />
@@ -66,10 +69,27 @@
             </p>
           </div>
           <!-- D05: Figma accent/decorations belong here or to scoped section CSS. -->
-          <svg class="about-intro__background-svg" xmlns="http://www.w3.org/2000/svg" width="100" height="200" viewBox="0 0 100 200" fill="none">
-            <rect width="100" height="100" fill="#2C6269"/>
-            <path d="M100 200C155.228 200 200 155.228 200 100C200 44.7715 155.228 0 100 0C44.7715 0 0 44.7715 0 100C0 155.228 44.7715 200 100 200ZM100 133C118.225 133 133 118.225 133 100C133 81.7746 118.225 67 100 67C81.7746 67 67 81.7746 67 100C67 118.225 81.7746 133 100 133Z" fill-rule="evenodd" clip-rule="evenodd" fill="#F67E7E"/>
-            <path d="M100 0H0V4H100V0ZM100 8H0V12H100V8ZM0 16H100V20H0V16ZM100 24H0V28H100V24ZM0 32H100V36H0V32ZM100 40H0V44H100V40Z" fill-rule="evenodd" clip-rule="evenodd" fill="#79C8C7"/>
+          <svg
+            class="about-intro__background-svg"
+            xmlns="http://www.w3.org/2000/svg"
+            width="100"
+            height="200"
+            viewBox="0 0 100 200"
+            fill="none"
+          >
+            <rect width="100" height="100" fill="#2C6269" />
+            <path
+              d="M100 200C155.228 200 200 155.228 200 100C200 44.7715 155.228 0 100 0C44.7715 0 0 44.7715 0 100C0 155.228 44.7715 200 100 200ZM100 133C118.225 133 133 118.225 133 100C133 81.7746 118.225 67 100 67C81.7746 67 67 81.7746 67 100C67 118.225 81.7746 133 100 133Z"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              fill="#F67E7E"
+            />
+            <path
+              d="M100 0H0V4H100V0ZM100 8H0V12H100V8ZM0 16H100V20H0V16ZM100 24H0V28H100V24ZM0 32H100V36H0V32ZM100 40H0V44H100V40Z"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              fill="#79C8C7"
+            />
           </svg>
         </div>
       </section>
@@ -77,152 +97,233 @@
 
       <!-- START D06 / T06 / M06: DIRECTORS; only <section class="about-directors">. -->
       <section class="about-directors" aria-labelledby="directors-title">
-        <div class="container">
+        <div class="about-directors-container">
           <h2 class="about-directors__title" id="directors-title">Meet the directors</h2>
+
           <ul class="about-directors__grid">
             <li class="about-directors__item">
               <article class="director-card">
                 <div class="director-card__front">
-                  <!-- D06: insert portrait img from img/directors/ (original Figma asset required). -->
+                  <img class="director-card__picture" src="./img/directors/nikita-marks.png" alt="Nikita Marks" />
                   <h3 class="director-card__name">Nikita Marks</h3>
                   <p class="director-card__role">Founder &amp; CEO</p>
                 </div>
+
                 <!-- D06 owns these controls and their JS behavior; do not duplicate this card. -->
-                <button
-                  class="director-card__toggle"
-                  type="button"
-                  aria-expanded="false"
-                  aria-controls="director-details-nikita-marks"
-                  aria-label="Show more about Nikita Marks"
-                >
-                  +
-                </button>
                 <div class="director-card__back" id="director-details-nikita-marks" hidden>
-                  <!-- D06: add expanded-card quote and social links from Figma, no made-up content. -->
+                  <h3 class="director-card__name">Nikita Marks</h3>
                   <p class="director-card__quote"></p>
-                  <div class="director-card__social"></div>
+
+                  <div class="director-card__social">
+                    <a
+                      class="director-card__social-link director-card__social-link--twitter"
+                      href="https://twitter.com/"
+                      aria-label="Twitter"
+                    ></a>
+                    <a
+                      class="director-card__social-link director-card__social-link--linkedin"
+                      href="https://www.linkedin.com/"
+                      aria-label="LinkedIn"
+                    ></a>
+                  </div>
                 </div>
               </article>
+
+              <button
+                class="director-card__toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="director-details-nikita-marks"
+                aria-label="Show more about Nikita Marks"
+              ></button>
             </li>
+
             <li class="about-directors__item">
               <article class="director-card">
                 <div class="director-card__front">
-                  <!-- D06: insert portrait img from img/directors/ (original Figma asset required). -->
+                  <img class="director-card__picture" src="./img/directors/cristian-duncan.png" alt="Cristian Duncan" />
                   <h3 class="director-card__name">Cristian Duncan</h3>
                   <p class="director-card__role">Co-founder &amp; COO</p>
                 </div>
+
                 <!-- D06 owns these controls and their JS behavior; do not duplicate this card. -->
-                <button
-                  class="director-card__toggle"
-                  type="button"
-                  aria-expanded="false"
-                  aria-controls="director-details-cristian-duncan"
-                  aria-label="Show more about Cristian Duncan"
-                >
-                  +
-                </button>
                 <div class="director-card__back" id="director-details-cristian-duncan" hidden>
-                  <!-- D06: add expanded-card quote and social links from Figma, no made-up content. -->
+                  <h3 class="director-card__name">Cristian Duncan</h3>
                   <p class="director-card__quote"></p>
-                  <div class="director-card__social"></div>
+
+                  <div class="director-card__social">
+                    <a
+                      class="director-card__social-link director-card__social-link--twitter"
+                      href="https://twitter.com/"
+                      aria-label="Twitter"
+                    ></a>
+                    <a
+                      class="director-card__social-link director-card__social-link--linkedin"
+                      href="https://www.linkedin.com/"
+                      aria-label="LinkedIn"
+                    ></a>
+                  </div>
                 </div>
               </article>
+
+              <button
+                class="director-card__toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="director-details-cristian-duncan"
+                aria-label="Show more about Cristian Duncan"
+              ></button>
             </li>
+
             <li class="about-directors__item">
               <article class="director-card">
                 <div class="director-card__front">
-                  <!-- D06: insert portrait img from img/directors/ (original Figma asset required). -->
+                  <img class="director-card__picture" src="./img/directors/cruz-hamer.png" alt="Cruz Hamer" />
                   <h3 class="director-card__name">Cruz Hamer</h3>
                   <p class="director-card__role">Co-founder &amp; CTO</p>
                 </div>
+
                 <!-- D06 owns these controls and their JS behavior; do not duplicate this card. -->
-                <button
-                  class="director-card__toggle"
-                  type="button"
-                  aria-expanded="false"
-                  aria-controls="director-details-cruz-hamer"
-                  aria-label="Show more about Cruz Hamer"
-                >
-                  +
-                </button>
                 <div class="director-card__back" id="director-details-cruz-hamer" hidden>
-                  <!-- D06: add expanded-card quote and social links from Figma, no made-up content. -->
+                  <h3 class="director-card__name">Cruz Hamer</h3>
                   <p class="director-card__quote"></p>
-                  <div class="director-card__social"></div>
+
+                  <div class="director-card__social">
+                    <a
+                      class="director-card__social-link director-card__social-link--twitter"
+                      href="https://twitter.com/"
+                      aria-label="Twitter"
+                    ></a>
+                    <a
+                      class="director-card__social-link director-card__social-link--linkedin"
+                      href="https://www.linkedin.com/"
+                      aria-label="LinkedIn"
+                    ></a>
+                  </div>
                 </div>
               </article>
+
+              <button
+                class="director-card__toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="director-details-cruz-hamer"
+                aria-label="Show more about Cruz Hamer"
+              ></button>
             </li>
+
             <li class="about-directors__item">
               <article class="director-card">
                 <div class="director-card__front">
-                  <!-- D06: insert portrait img from img/directors/ (original Figma asset required). -->
+                  <img class="director-card__picture" src="./img/directors/drake-heatan.png" alt="Drake Heaton" />
                   <h3 class="director-card__name">Drake Heaton</h3>
                   <p class="director-card__role">Business Development Lead</p>
                 </div>
+
                 <!-- D06 owns these controls and their JS behavior; do not duplicate this card. -->
-                <button
-                  class="director-card__toggle"
-                  type="button"
-                  aria-expanded="false"
-                  aria-controls="director-details-drake-heaton"
-                  aria-label="Show more about Drake Heaton"
-                >
-                  +
-                </button>
                 <div class="director-card__back" id="director-details-drake-heaton" hidden>
-                  <!-- D06: add expanded-card quote and social links from Figma, no made-up content. -->
+                  <h3 class="director-card__name">Drake Heaton</h3>
                   <p class="director-card__quote"></p>
-                  <div class="director-card__social"></div>
+
+                  <div class="director-card__social">
+                    <a
+                      class="director-card__social-link director-card__social-link--twitter"
+                      href="https://twitter.com/"
+                      aria-label="Twitter"
+                    ></a>
+                    <a
+                      class="director-card__social-link director-card__social-link--linkedin"
+                      href="https://www.linkedin.com/"
+                      aria-label="LinkedIn"
+                    ></a>
+                  </div>
                 </div>
               </article>
+
+              <button
+                class="director-card__toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="director-details-drake-heaton"
+                aria-label="Show more about Drake Heaton"
+              ></button>
             </li>
+
             <li class="about-directors__item">
               <article class="director-card">
                 <div class="director-card__front">
-                  <!-- D06: insert portrait img from img/directors/ (original Figma asset required). -->
+                  <img class="director-card__picture" src="./img/directors/griffin-wise.png" alt="Griffin Wise" />
                   <h3 class="director-card__name">Griffin Wise</h3>
                   <p class="director-card__role">Lead Marketing</p>
                 </div>
+
                 <!-- D06 owns these controls and their JS behavior; do not duplicate this card. -->
-                <button
-                  class="director-card__toggle"
-                  type="button"
-                  aria-expanded="false"
-                  aria-controls="director-details-griffin-wise"
-                  aria-label="Show more about Griffin Wise"
-                >
-                  +
-                </button>
                 <div class="director-card__back" id="director-details-griffin-wise" hidden>
-                  <!-- D06: add expanded-card quote and social links from Figma, no made-up content. -->
+                  <h3 class="director-card__name">Griffin Wise</h3>
                   <p class="director-card__quote"></p>
-                  <div class="director-card__social"></div>
+
+                  <div class="director-card__social">
+                    <a
+                      class="director-card__social-link director-card__social-link--twitter"
+                      href="https://twitter.com/"
+                      aria-label="Twitter"
+                    ></a>
+                    <a
+                      class="director-card__social-link director-card__social-link--linkedin"
+                      href="https://www.linkedin.com/"
+                      aria-label="LinkedIn"
+                    ></a>
+                  </div>
                 </div>
               </article>
+
+              <button
+                class="director-card__toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="director-details-griffin-wise"
+                aria-label="Show more about Griffin Wise"
+              ></button>
             </li>
+
             <li class="about-directors__item">
               <article class="director-card">
                 <div class="director-card__front">
-                  <!-- D06: insert portrait img from img/directors/ (original Figma asset required). -->
+                  <img class="director-card__picture" src="./img/directors/aden-allan.png" alt="Aden Allan" />
                   <h3 class="director-card__name">Aden Allan</h3>
                   <p class="director-card__role">Account Manager</p>
                 </div>
+
                 <!-- D06 owns these controls and their JS behavior; do not duplicate this card. -->
-                <button
-                  class="director-card__toggle"
-                  type="button"
-                  aria-expanded="false"
-                  aria-controls="director-details-aden-allan"
-                  aria-label="Show more about Aden Allan"
-                >
-                  +
-                </button>
                 <div class="director-card__back" id="director-details-aden-allan" hidden>
-                  <!-- D06: add expanded-card quote and social links from Figma, no made-up content. -->
-                  <p class="director-card__quote"></p>
-                  <div class="director-card__social"></div>
+                  <h3 class="director-card__name">Aden Allan</h3>
+
+                  <p class="director-card__quote">
+                    “Empowered teams create truly amazing products. Set the north star and let them follow it.”
+                  </p>
+
+                  <div class="director-card__social">
+                    <a
+                      class="director-card__social-link director-card__social-link--twitter"
+                      href="https://twitter.com/"
+                      aria-label="Twitter"
+                    ></a>
+                    <a
+                      class="director-card__social-link director-card__social-link--linkedin"
+                      href="https://www.linkedin.com/"
+                      aria-label="LinkedIn"
+                    ></a>
+                  </div>
                 </div>
               </article>
+
+              <button
+                class="director-card__toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="director-details-aden-allan"
+                aria-label="Show more about Aden Allan"
+              ></button>
             </li>
           </ul>
         </div>
@@ -235,14 +336,14 @@
           <h2 class="about-clients__title" id="clients-title">Some of our clients</h2>
           <!-- D05: replace text with original Figma logo <img> tags; do not invent logos. -->
           <div class="about-clients__logos-container">
-            <img src="./img/clients/the-verge.svg" alt="">
-            <img src="./img/clients/TheJakartaPost.svg" alt="">
-            <img src="./img/clients/The-guardian.svg" alt="">
-            <img src="./img/clients/techradar.svg" alt="">
-            <img src="./img/clients/gadgets-now.svg" alt="">
+            <img src="./img/clients/the-verge.svg" alt="" />
+            <img src="./img/clients/TheJakartaPost.svg" alt="" />
+            <img src="./img/clients/The-guardian.svg" alt="" />
+            <img src="./img/clients/techradar.svg" alt="" />
+            <img src="./img/clients/gadgets-now.svg" alt="" />
           </div>
         </div>
-        <img class="about-clients__decoration" src="./img/decorative/about-clients-decoration.svg" alt="">
+        <img class="about-clients__decoration" src="./img/decorative/about-clients-decoration.svg" alt="" />
       </section>
       <!-- END D05 / T05 / M05: ABOUT CLIENTS -->
     </main>
