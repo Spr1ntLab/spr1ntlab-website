@@ -208,7 +208,12 @@
     position: absolute;
     margin-top: 55px;
     right: 0;
-    z-index: 0;
+    transform: translateY(10%);
+  }
+
+  .corner-decorations {
+    position: absolute;
+    transform: translateY(-125%);
   }
 
   .home-testimonials{
