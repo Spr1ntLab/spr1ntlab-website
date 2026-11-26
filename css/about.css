@@ -4,14 +4,86 @@
 
 /* ===== START D05 — ABOUT INTRO | OWNED SELECTORS: .about-intro and children ===== */
 /* Add only D05 — ABOUT INTRO rules for .about-intro and children here. */
+.about-intro__container {
+  display: flex;
+  width: 1110px;
+  height: 156px;
+  justify-self: center;
+  gap: 30px;
+  margin: 120px 0;
+}
+
+#about-title {
+  height: 100px;
+  width: 350px;
+  font-size: 64px;
+}
+
+.about-intro__text-container {
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+}
+
+.about-intro__text {
+  width: 730px;
+}
+
+.about-intro__span {
+  width: 50px;
+  height: 4px;
+  flex-shrink: 0;
+  background-color: #F67E7E;
+}
+
+.about-intro__background-svg {
+  position: absolute;
+  top: 317px;
+  right: 0px;
+}
 /* ===== END D05 — ABOUT INTRO ===== */
 
 /* ===== START D06 — DIRECTORS | OWNED SELECTORS: .about-directors, .director-card and children ===== */
 /* Add only D06 — DIRECTORS rules for .about-directors, .director-card and children here. */
+
 /* ===== END D06 — DIRECTORS ===== */
 
 /* ===== START D05 — ABOUT CLIENTS | OWNED SELECTORS: .about-clients and children ===== */
 /* Add only D05 — ABOUT CLIENTS rules for .about-clients and children here. */
+.about-clients {
+  background: #012F34;
+  position: relative;
+}
+
+.about-clients__container {
+  padding: 140px 0;
+}
+
+.about-clients__title {
+  color: #FFF;
+  text-align: center;
+  font-family: Livvic;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  margin: 0 0 64px 0;
+}
+
+.about-clients__logos-container {
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+}
+
+.about-clients__logos-container > img {
+  filter: brightness(0) invert(1);
+}
+
+.about-clients__decoration {
+  position: absolute;
+  top: 0;
+}
 /* ===== END D05 — ABOUT CLIENTS ===== */
 
 
