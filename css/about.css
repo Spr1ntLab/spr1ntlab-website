@@ -154,6 +154,90 @@
   width: 0.25rem;
   height: 1rem;
 } 
+
+.director-card__front[hidden],
+.director-card__back[hidden] {
+  display: none;
+}
+
+.director-card__back {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.director-card__quote {
+  max-width: 15.875rem;
+  margin-top: 0.5rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  line-height: 1.5625rem;
+  color: var(--color-white);
+}
+
+.director-card__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.director-card__social-link {
+  display: block;
+  height: 1.25rem;
+  background-color: var(--color-white);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  transition: background-color 0.2s ease;
+}
+
+.director-card__social-link--twitter {
+  width: 1.5rem;
+  mask-image: url("../img/icons/icon-twitter.svg");
+}
+
+.director-card__social-link--linkedin {
+  width: 1.25rem;
+  mask-image: url("../img/icons/icon-linkedin.svg");
+}
+
+.director-card__social-link:hover,
+.director-card__social-link:focus-visible {
+  background-color: var(--color-light-coral);
+}
+
+.about-directors__item.is-expanded {
+  background-color: var(--color-dark-green);
+}
+
+.is-expanded .director-card {
+  margin-top: 2.1875rem;
+}
+
+.director-card__toggle {
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.director-card__toggle:hover {
+  background-color: var(--color-rapture-blue);
+}
+
+.director-card__toggle[aria-expanded="true"] {
+  background-color: var(--color-rapture-blue);
+}
+
+.director-card__toggle[aria-expanded="true"]::before,
+.director-card__toggle[aria-expanded="true"]::after {
+  rotate: 45deg;
+}
+
+.director-card__toggle[aria-expanded="true"]:hover {
+  background-color: var(--color-light-coral);
+}
 /* ===== END D06 — DIRECTORS ===== */
 
 /* ===== START D05 — ABOUT CLIENTS | OWNED SELECTORS: .about-clients and children ===== */
