@@ -13,10 +13,18 @@
 /* ===== START D04 — HOME TESTIMONIALS | OWNED SELECTORS: .home-testimonials and children ===== */
 @media (min-width: 1440px) {
   .home-testimonials__title {
+    position: relative;
     text-align: center;
     font-size: 48px;
     margin-bottom: 59px;
+    margin-left: 160px;
   }
+
+   .title-color{
+    color: #79C8C7;
+    font-style: normal;
+  }
+
   .home-testimonials__grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -24,17 +32,53 @@
     gap: 33px;
     text-align: center;
   }
+
   .home-testimonials__item {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 24px;
   }
+
   figcaption {
     display: grid;
   }
+
   span{
     font-style: italic;
+  }
+
+  .decorative-caption_svg {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .home-testimonials__item blockquote {
+    position: relative;
+  }
+
+  .home-testimonials__item blockquote p {
+    position: relative;
+  
+  }
+ 
+  .right-corner_oval{
+    position: absolute;
+    margin-top: 55px;
+    right: 0;
+    z-index: 0;
+  }
+
+  .home-testimonials{
+    position: relative;
+    margin-bottom: 166px;
+    margin-top: 122px;
+  }
+
+  figcaption strong{
+    color: #79C8C7;
   }
   }
 
